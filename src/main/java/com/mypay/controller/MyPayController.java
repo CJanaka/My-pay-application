@@ -29,6 +29,7 @@ import com.mypay.service.MerchantService;
 import com.mypay.service.OtpService;
 import com.mypay.service.OutletService;
 import com.mypay.service.PaymentDetailsService;
+import com.mypay.service.TestService;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -58,6 +59,14 @@ public class MyPayController {
 	@Autowired
 	private MerchantService merchantService;
 
+	@Autowired
+	private TestService testServ;
+	
+	@GetMapping("/")
+	public void getTest() {
+		testServ.getEmp();
+	}
+	
 	//Get contact number and sent OTP.
 	@GetMapping("/{contact}")
 	public String sendOTP(@PathVariable("contact") String contactNo) {

@@ -1,0 +1,42 @@
+{
+  "groups": [
+    {
+      "name": "twilio",
+      "type": "com.mypay.config.Configure",
+      "sourceType": "com.mypay.config.Configure"
+    }
+  ],
+  "properties": [
+    {
+      "name": "twilio.account-sid",
+      "type": "java.lang.String",
+      "sourceType": "com.mypay.config.Configure"
+    },
+    {
+      "name": "twilio.account_sid",
+      "type": "java.lang.String",
+      "description": "A description for 'twilio.account_sid'"
+    },
+    {
+      "name": "twilio.auth-token",
+      "type": "java.lang.String",
+      "sourceType": "com.mypay.config.Configure"
+    },
+    {
+      "name": "twilio.auth_token",
+      "type": "java.lang.String",
+      "description": "A description for 'twilio.auth_token'"
+    },
+    {
+      "name": "twilio.trial-number",
+      "type": "java.lang.String",
+      "sourceType": "com.mypay.config.Configure"
+    },
+    {
+      "name": "twilio.trial_number",
+      "type": "java.lang.String",
+      "description": "A description for 'twilio.trial_number'"
+    }
+  ],
+  "hints": []
+}
